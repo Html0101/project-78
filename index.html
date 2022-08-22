@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Project 78</title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img id="pictures" src="https://imgs.search.brave.com/PnWnijM8nylLFAqfN9tTh1sNfRfELvU97kEdbPjE3DQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAx/NzMvODY3Ni9wcm9k/dWN0cy9mYW1pbHlf/Ym9vay5qcGc_dj0x/NDYwMDAxMTc4">
+        <h3 id="text">Family Book</h3>
+        <button onclick="change()">Next</button>
+        <script>
+            var images = ["https://imgs.search.brave.com/PnWnijM8nylLFAqfN9tTh1sNfRfELvU97kEdbPjE3DQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAx/NzMvODY3Ni9wcm9k/dWN0cy9mYW1pbHlf/Ym9vay5qcGc_dj0x/NDYwMDAxMTc4", "https://imgs.search.brave.com/wk0TvYHCH5ZBtSCq1tXNZyypCPkeXwjwjqbk_eOLDGY/rs:fit:640:480:1/g:ce/aHR0cHM6Ly93ZWJz/dG9ja3Jldmlldy5u/ZXQvaW1hZ2VzL2Zh/bWlsaWVzLWNsaXBh/cnQtZGFkLTE4LnBu/Zw", "https://imgs.search.brave.com/AZTUi5Kh10MUyjn-SqziWRfNXmzNkR-YEhXHb_bZSBM/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93ZWJz/dG9ja3Jldmlldy5u/ZXQvaW1hZ2VzL2Jy/b3RoZXItY2xpcGFy/dC1icm90aGVyLWhl/YWQtNS5wbmc", "https://imgs.search.brave.com/qjJBpfvgoJdgqtNwF0nMCLwtDSBydFDDo6mKb9VBqig/rs:fit:584:715:1/g:ce/aHR0cDovL3BsdXNw/bmcuY29tL2ltZy1w/bmcvcG5nLW1vdGhl/ci1vbmx5LW5pY2Ut/NTg0LnBuZw"]
+            var names = ["Family Book", "Dad", "sister", "Mom"]
+            var i=0;
+            function change(){
+            document.getElementById("text").innerHTML=names[i];
+            document.getElementById("pictures").src=images[i];i++;
+            }
+        </script>
+    </body>
+</html>
